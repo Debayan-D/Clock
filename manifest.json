@@ -1,12 +1,17 @@
 {
-    "name": "What's The Time?",
+
+    "name": "What's the Time?",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "A clock",
+    "description": "A Clock New Tab",
+    "content_scripts": [{
+        "js": ["js/script.js"],
+        "matches": ["http://*/*"]
+    }],
     "browser_action":{
-        "default_icon": "icon.png"
+        "default_icon": "icon.jpeg"
     },
     "chrome_url_overrides": {
     "newtab": "index.html"
       }
-}
+    }
