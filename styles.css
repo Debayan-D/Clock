@@ -165,3 +165,50 @@ body.light .toggleClass::before
 {
     content: 'Dark Mode';
 }
+.verticletop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
+    }
+    
+    .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    position: center;
+    }
+    
+    .button2:hover {
+    background-color: #008CBA;
+    color: white;
+    }
+    
+    input[type=text] {
+     width: 250px;
+     box-sizing: border-box;
+     border: 2px solid #ccc;
+     border-radius: 4px;
+     font-size: 16px;
+     background-color: white;
+     padding: 12px 20px 12px 10px;
+     -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    text-align: center;
+    }

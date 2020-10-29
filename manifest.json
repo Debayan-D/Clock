@@ -1,0 +1,12 @@
+{
+    "name": "What's The Time?",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "A clock",
+    "browser_action":{
+        "default_icon": "icon.png"
+    },
+    "chrome_url_overrides": {
+    "newtab": "index.html"
+      }
+}
