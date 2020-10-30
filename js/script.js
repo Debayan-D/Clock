@@ -36,5 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     realtimeClock();
     realTimeDate();
-    
+
+    document.getElementById('toggleClass').addEventListener("click", toggleClass);
+
+    function toggleClass() {
+        const body = document.querySelector('body');
+        body.classList.toggle('light');
+    }   
 });

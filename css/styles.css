@@ -1,7 +1,13 @@
-html, body{
+body
+{
+    display: flex;
     margin: 0;
     width: 100%;
-    background-color: #091921;
+    background: #091921;
+}
+
+body.light{
+    background: #d1dae3;
 }
 
 #clock {
@@ -15,6 +21,19 @@ html, body{
     z-index: 100%;
 }
 
+body.light #clock{
+    width:100%;
+    position: fixed;
+    font-size: 9vw;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+    z-index: 100%;
+}
+
+
+
 #date {
     width: 100%;
     position: fixed;
@@ -25,6 +44,19 @@ html, body{
     margin-top: 20%;
     z-index: 100%;
 }
+
+body.light #date {
+    width: 100%;
+    position: fixed;
+    font-size: 3vw;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20%;
+    z-index: 100%;
+}
+
+
 
 .button {
     border: none;
@@ -53,7 +85,7 @@ html, body{
     }
     
 input[type=text] {
-     margin-top: 15%;
+     margin-top: 20%;
      width: 500px;
      box-sizing: border-box;
      border: 2px solid #ccc;
@@ -74,6 +106,36 @@ input[type=text] {
         width: 100%;
         }
 
-.searchbar{
-    width: 100%;
+#toggleClass{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    background: #d1dae3;
+    color: #d1dae3;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
+
+#toggleClass:before{
+    content: 'Light Mode';
+    white-space: nowrap;
+    left: 25px;
+    position: absolute;
+
+}
+
+body.light #toggleClass {
+    background: #091921;
+    color: #091921;
+}
+
+body.light #toggleClass:before {
+    content: 'Dark Mode';
+}
+
