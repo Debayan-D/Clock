@@ -21,7 +21,7 @@ html, body{
     font-size: 3vw;
     color: white;
     text-align: center;
-    font-familt: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 20%;
     z-index: 100%;
 }
@@ -53,7 +53,7 @@ html, body{
     }
     
 input[type=text] {
-     margin-top: 10%;
+     margin-top: 15%;
      width: 500px;
      box-sizing: border-box;
      border: 2px solid #ccc;
