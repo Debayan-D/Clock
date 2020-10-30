@@ -15,6 +15,17 @@ html, body{
     z-index: 100%;
 }
 
+#date {
+    width: 100%;
+    position: fixed;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    font-familt: 'Roboto', sans-serif;
+    margin-top: 20%;
+    z-index: 100%;
+}
+
 .button {
     border: none;
     color: white;
